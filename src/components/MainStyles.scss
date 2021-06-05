@@ -1,0 +1,88 @@
+$profile-border-color: #36454f;
+$box-shadow-color: 0px 3px 9px 0px rgba(0,0,0,.3);
+$link-color: #686868;
+$sub-text: #686868;
+$profile-card-background: #fdfdfd;
+
+.profile-card {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: $profile-card-background;
+  height: 350px;
+  width: 650px;
+  border-radius: 8px;
+  letter-spacing: 1.2px;
+  box-shadow: $box-shadow-color;
+  padding: 10px;
+}
+
+.profile__portrait {
+  border-radius: 50%;
+  border: 2px solid $profile-border-color;
+  width: 200px;
+  height: 200px;
+  margin-right: 5px;
+}
+
+.profile-card__name {
+  font-size: 20px;
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0px 10px;
+}
+
+// keep icon grey after click, sets all links to grey
+a, a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-title {
+  margin-left: 10px;
+}
+
+.profile__header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-card__description {
+  margin: 30px 20px; // top right
+  margin: 30px 20px 0 0; // top right bottom left
+  font-size: 12px;
+}
+
+.profile-card__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card__heading {
+  text-align: left;
+  line-height: 35px;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0;
+}
+
+.profile-card__sub-text {
+  text-align: left; // instead of left, allows text on the right to properly wrap
+  margin: 0 0 0 15px;
+  font-size: 25px;
+  color: $sub-text;
+}
