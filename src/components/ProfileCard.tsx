@@ -10,9 +10,11 @@ const ProfileCard: React.FC<{}> = () => {
         <div className="profile-card__title">
           <span className="profile-card__heading">Juan Monterrosa</span>
           <span className="profile-card__sub-text">Back-End Developer</span>
-          <p className="profile-card__description">It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Eliptical talk. The other day the grass was brown, now it’s green because I ain’t give up. Never surrender.</p>
+          <p className="profile-card__description">Honest, easy-going and driven Software Developer motivated to utilize my skills and creativity in Typescript, Javascript, Node.js and PostgreSQL. I have a passion for learning new technologies and love working on a team to build efficient products and services.</p>
         </div>
-        <img className="profile__portrait" src={profile_picture} alt="Juan Monterrosa" />
+        <div>
+          <img className="profile__portrait" src={profile_picture} alt="Juan Monterrosa" />
+        </div>
         {/* <img className="profile__portrait" src="https://avatars.githubusercontent.com/u/12138574?v=4" alt="Juan Monterrosa" /> */}
       </div>
       <Social />
